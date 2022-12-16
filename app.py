@@ -7,7 +7,8 @@ import numpy as np
 
 app = Flask(__name__)
 
-MODEL_PATH = "model/1"
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(THIS_FOLDER, 'model/1')
 model = load_model(MODEL_PATH)
 
 IMAGE_SIZE = 256
