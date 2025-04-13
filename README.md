@@ -14,5 +14,5 @@ python -m venv .venv
 
 pip install -r requirements.txt
 
-python run app.py
+python app.py
 ```
