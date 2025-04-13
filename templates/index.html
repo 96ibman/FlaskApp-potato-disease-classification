@@ -8,19 +8,18 @@
 <div class="content">
     <br><br>
     <h1>Potato Disease Classification</h1>
-    <br><hr><br>
-    <h4>Developed By: Ibrahim M. Nasser</h4>
-    <a href="https://ibrahim-nasser.com/">Website</a>
-    <a href="https://www.linkedin.com/in/ibrahimnasser96/">LinkedIn</a>
-    <a href="https://twitter.com/mleng_ibrahim">Twitter</a>
-    <a href="https://github.com/96ibman">GitHub</a>
-    <br><br><hr><br>
+    <hr>
+    <h4>Ibrahim Nasser</h4>
+    <a href="https://96ibman.github.io/ibrahim-nasser/", target="_blank">Website</a>
+    <a href="https://www.linkedin.com/in/ibrahimnasser96/", target="_blank">LinkedIn</a>
+    <a href="https://github.com/96ibman", target="_blank">GitHub</a>
+    <br><hr>
     <form class="p-3 text-center", action="", method="post", enctype="multipart/form-data">
         <input class="form-control", type="file", name="imagefile">
         <input class="btn btn-primary mt-3", type="submit", value="Predict Disease">
     </form>
     {% if prediction %}
-    <h3 class="text-center"> {{prediction}} </h3>
+    <h3 class="text-center">Prediction: <span style="color: red;">{{prediction}}</span></h3>
     {% endif %}
 
     {% if nofile %}
@@ -32,7 +31,7 @@
     {% endif %}
 
     {% if image %}
-    <img src="{{ image }}"  alt="Image" style="display:block; margin-left:auto; margin-right:auto; width:70%">
+    <img src="{{ image }}"  alt="Image" style="display:block; margin-left:auto; margin-right:auto; width:30%">
     {% endif %}
 
     <hr>

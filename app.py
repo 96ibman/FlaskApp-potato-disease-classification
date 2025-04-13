@@ -57,5 +57,6 @@ def predict():
     return render_template('index.html', image=full_image_path, prediction=predicted_class)
 
 if __name__ == "__main__":
-    from waitress import serve
-    serve(app, host='0.0.0.0', port=8080)
+    #from waitress import serve                # For Deployment
+    #serve(app, host='0.0.0.0', port=8080)     # For Deployment
+    app.run(debug=True)                        # For Local
